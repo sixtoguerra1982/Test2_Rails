@@ -1,0 +1,47 @@
+<div class="jumbotron"><h1>Chile Pais Maravilloso</h1></div>
+<div class="historias">
+	<div class="row">
+			<% @historias.each do |historia| %>
+				 <div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<div class="well">
+							<p><%=historia.titulo %></p>
+							<p><%= historia.description %></p></br>
+						</div>	
+							<% if user_signed_in?%>
+								<% if no_existe_historia_para_usuario?(current_user,historia) %>
+									<div class="card">
+										<%= image_tag(historia.url,class: "card-img-top cartel_historia") %>
+									</br>
+									</div>
+									</br>
+									<div class="well">
+									<p><%= link_to 'Completar', history_tasks_path(history_id: historia.id, user_id: current_user.id, histories_id: historia.id, state: true),method: :create, class: "btn btn-primary" %>   <%= link_to 'Detalles', root_path, class: "btn btn-primary" %></p>
+									</div>	
+								<% else %>
+									<div class="card">
+										<%= image_tag('completada.png',class: "card-img-top cartel_historia_nosombra") %>
+									</br>
+									</div>
+									</br>
+									<div class="well">
+									<p><%= link_to 'Cancelar ->', task_desmarcar_path(histories_id: historia.id), method: :desmarcar, class: "btn btn-primary" %>   <%= link_to 'Detalles', root_path, class: "btn btn-primary" %></p>
+									</div>	
+								<% end %>
+							<%else%>
+							     <div class="card">
+									<%= image_tag(historia.url,class: "card-img-top cartel_historia") %>
+									</br>
+								 </div>
+								</br>
+								<div class="well">
+								<p><%= link_to 'Iniciar Sesion', history_tasks_path(history_id: historia.id),method: :create, class: "btn btn-primary" %>   <%= link_to 'Detalles', root_path, class: "btn btn-primary" %></p>
+								</div>	
+							<% end %>
+					</div>
+				</div>
+			<% end %>
+		
+	</div>
+</div>
+<%  %>
