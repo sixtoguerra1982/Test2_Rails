@@ -1,4 +1,15 @@
-<div class="jumbotron"><h1>Chile Pais Maravilloso</h1></div>
+<%= render 'shared/notice_alert' %>
+<div class="row">
+	<div class="col-md-6">
+		<div style="background-color: #0035AD"><p class="estrella"><span class="glyphicon glyphicon-star" style="font-size: 2000%"></p></span>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div style="background-color: #ffffff"><span class="glyphicon glyphicon-heart-empty" style="font-size: 2000%;color: white"></span></div>
+	</div>	
+	
+</div>
+
 <div class="historias">
 	<div class="row">
 			<% @historias.each do |historia| %>
