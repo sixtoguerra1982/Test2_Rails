@@ -13,7 +13,10 @@ class TasksController < ApplicationController
      redirect_to home_index_path
   end
 
+  def index
+     @tasks = Task.where("historie_id=#{params[:history_id]}")
+     @historia = Historie.where("id=#{params[:history_id]}").first
+  end
 end
-
 
 

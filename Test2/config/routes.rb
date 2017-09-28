@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
   get 'tasks/create'
 
+
   devise_for :users
   resources :home, only: [:index]
   
   resources :histories, only: :index do
-  	resources :tasks, only: [:create]
+  	resources :tasks, only: [:create, :index]
   end
   
   post '/historie/:histories_id' => 'tasks#desmarcar',

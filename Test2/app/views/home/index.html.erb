@@ -1,13 +1,12 @@
 <%= render 'shared/notice_alert' %>
 <div class="row">
-	<div class="col-md-6">
-		<div style="background-color: #0035AD"><p class="estrella"><span class="glyphicon glyphicon-star" style="font-size: 2000%"></p></span>
+	<div class="col-xs-12 col-sm-12 col-md-6">
+		<div style="background-color: #0035AD"><p style="text-align: center;color :#ffffff;margin: 0px;"><span class="glyphicon glyphicon-star" style="font-size: 2000%"></p></span>
 		</div>
 	</div>
-	<div class="col-md-6">
+	<div class="col-md-6 hidden-xs hidden-sm">
 		<div style="background-color: #ffffff"><span class="glyphicon glyphicon-heart-empty" style="font-size: 2000%;color: white"></span></div>
 	</div>	
-	
 </div>
 
 <div class="historias">
@@ -27,16 +26,16 @@
 									</div>
 									</br>
 									<div class="well">
-									<p><%= link_to 'Completar', history_tasks_path(history_id: historia.id, user_id: current_user.id, histories_id: historia.id, state: true),method: :create, class: "btn btn-primary" %>   <%= link_to 'Detalles', root_path, class: "btn btn-primary" %></p>
+									<p><%= link_to 'Completar', history_tasks_path(history_id: historia.id, user_id: current_user.id, histories_id: historia.id, state: true),method: :create, class: "btn btn-primary" %>   <%= link_to 'Detalles',history_tasks_path(history_id: historia.id), class: "btn btn-primary" %></p>
 									</div>	
 								<% else %>
 									<div class="card">
-										<%= image_tag('completada.png',class: "card-img-top cartel_historia_nosombra") %>
+										<%= image_tag('visto-bueno.png',class: "card-img-top cartel_historia_nosombra") %>
 									</br>
 									</div>
 									</br>
 									<div class="well">
-									<p><%= link_to 'Cancelar ->', task_desmarcar_path(histories_id: historia.id), method: :desmarcar, class: "btn btn-primary" %>   <%= link_to 'Detalles', root_path, class: "btn btn-primary" %></p>
+									<p><%= link_to 'Cancelar ->', task_desmarcar_path(histories_id: historia.id), method: :desmarcar, class: "btn btn-primary" %>   <%= link_to 'Detalles',history_tasks_path(history_id: historia.id), class: "btn btn-primary" %></p>
 									</div>	
 								<% end %>
 							<%else%>
@@ -46,7 +45,7 @@
 								 </div>
 								</br>
 								<div class="well">
-								<p><%= link_to 'Iniciar Sesion', history_tasks_path(history_id: historia.id),method: :create, class: "btn btn-primary" %>   <%= link_to 'Detalles', root_path, class: "btn btn-primary" %></p>
+								<p><%= link_to 'Iniciar Sesion', history_tasks_path(history_id: historia.id),method: :create, class: "btn btn-primary" %>
 								</div>	
 							<% end %>
 					</div>

@@ -1,0 +1,57 @@
+<%= render 'shared/notice_alert' %>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-6">
+    <div style="background-color: #0035AD"><p style="text-align: center;color :#ffffff;margin: 0px;"><span class="glyphicon glyphicon-star" style="font-size: 2000%"></p></span>
+    </div>
+  </div>
+  <div class="col-md-6 hidden-xs hidden-sm">
+    <div style="background-color: #ffffff"><span class="glyphicon glyphicon-heart-empty" style="font-size: 2000%;color: white"></span></div>
+  </div>  
+</div>
+
+
+
+<div class="historias">
+<div class="row">
+   <div class="col-md-4">
+    <div class="card">
+      <%= image_tag(@historia.url,class: "card-img-top cartel_historia") %>
+      </br>
+    </div>
+      </br>
+   </div> 
+   <div class="col-md-8">
+       <div class="well">
+        <p><%=@historia.titulo %></p>
+        <p><%=@historia.description %></p></br>
+      </div>  
+    </div>
+</div>      
+</div>
+
+
+<table class="table">
+  <thead>
+    <tr>
+    <th>ID_User</th>
+    <th>Date Completed</th>
+    <th>STATE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tasks.each do |task| %>
+    <tr>
+    <td><%=task.user.email%></td>
+    <td><%=task.created_at%></td>
+    <td><%=task.state%></td>
+    </tr>
+    <% end %> 
+  </tbody>
+</table>
+
+<div class="row">
+<div class="col-md-12">
+  <p style = "text-align: center"><%= link_to 'Volver',root_path, class: "btn btn-primary" %></p>
+</div>
+</div>
