@@ -14,6 +14,8 @@ class TasksController < ApplicationController
   end
 
   def index
+     @tasks_made = Task.where("user_id=#{current_user.id}").count
+     @histories_total = Historie.count
      @tasks = Task.where("historie_id=#{params[:history_id]}")
      @historia = Historie.where("id=#{params[:history_id]}").first
   end

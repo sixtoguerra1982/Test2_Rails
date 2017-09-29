@@ -36,6 +36,7 @@
     <tr>
     <th>ID_User</th>
     <th>Date Completed</th>
+    <th>Contador</th>
     <th>STATE</th>
     </tr>
   </thead>
@@ -44,6 +45,7 @@
     <tr>
     <td><%=task.user.email%></td>
     <td><%=task.created_at%></td>
+    <td><%= contador_total_de_usuario(task) %>/<%= contador_total_de_historia %></td>
     <td><%=task.state%></td>
     </tr>
     <% end %> 

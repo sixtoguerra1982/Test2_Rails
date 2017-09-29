@@ -7,4 +7,12 @@ module TasksHelper
 		    false
 		end
 	end
+	def contador_total_de_usuario task
+   	 	@contador_total_de_usuario = Task.where("user_id=#{task.user_id}").count
+    end
+
+    def contador_total_de_historia
+    	@contador_total_de_historia = Historie.count 
+    end
+
 end
