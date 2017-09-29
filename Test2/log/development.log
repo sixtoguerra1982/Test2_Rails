@@ -37949,3 +37949,540 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 48ms (Views: 39.5ms | ActiveRecord: 2.4ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHistorie Load (0.2ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHistorie Load (0.2ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mHistorie Load (1.3ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 51]]
+  [1m[35m (114.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 52]]
+  [1m[35m (86.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 53]]
+  [1m[35m (96.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 54]]
+  [1m[35m (76.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 55]]
+  [1m[35m (76.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 65]]
+  [1m[35m (96.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 66]]
+  [1m[35m (74.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 85]]
+  [1m[35m (74.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 120]]
+  [1m[35m (98.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 127]]
+  [1m[35m (76.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 129]]
+  [1m[35m (74.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 131]]
+  [1m[35m (95.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mHistorie Load (0.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = ?[0m  [["id", 1]]
+  [1m[35m (83.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = ?[0m  [["id", 2]]
+  [1m[35m (106.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = ?[0m  [["id", 3]]
+  [1m[35m (75.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = ?[0m  [["id", 4]]
+  [1m[35m (76.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = ?[0m  [["id", 5]]
+  [1m[35m (98.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHistorie Load (0.3ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("titulo", "description", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "Arica y Parinacota"], ["description", "Arica y Parinacota description"], ["url", "http://i68.tinypic.com/2j0kow1.jpg"], ["created_at", "2017-09-29 00:32:00.253112"], ["updated_at", "2017-09-29 00:32:00.253112"]]
+  [1m[35m (88.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (4.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("titulo", "description", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "Antofagasta"], ["description", "Antofagasta description"], ["url", "http://i63.tinypic.com/a41jps.jpg"], ["created_at", "2017-09-29 00:32:00.349671"], ["updated_at", "2017-09-29 00:32:00.349671"]]
+  [1m[35m (69.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "histories" ("titulo", "description", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "Atacama"], ["description", "Atacama description"], ["url", "http://i65.tinypic.com/azjpxk.jpg"], ["created_at", "2017-09-29 00:32:00.428195"], ["updated_at", "2017-09-29 00:32:00.428195"]]
+  [1m[35m (114.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("titulo", "description", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "Coquimbo"], ["description", "Coquimbo description"], ["url", "http://i65.tinypic.com/2cxgms0.jpg"], ["created_at", "2017-09-29 00:32:00.549799"], ["updated_at", "2017-09-29 00:32:00.549799"]]
+  [1m[35m (78.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("titulo", "description", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "Valparaiso"], ["description", "Valparaiso description"], ["url", "http://i68.tinypic.com/2j0kow1.jpg"], ["created_at", "2017-09-29 00:32:00.637161"], ["updated_at", "2017-09-29 00:32:00.637161"]]
+  [1m[35m (84.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("titulo", "description", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "REGIÓN METROPOLITANA"], ["description", "REGIÓN METROPOLITANA"], ["url", "http://static.t13.cl/images/original/2015/09/1441399697-1.jpg"], ["created_at", "2017-09-29 00:32:00.726805"], ["updated_at", "2017-09-29 00:32:00.726805"]]
+  [1m[35m (171.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("titulo", "description", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "REGIÓN DE O´HIGGINS"], ["description", "REGIÓN DE O´HIGGINS"], ["url", "http://static.t13.cl/images/original/2015/09/1441399728-2.jpg"], ["created_at", "2017-09-29 00:32:00.904457"], ["updated_at", "2017-09-29 00:32:00.904457"]]
+  [1m[35m (173.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("titulo", "description", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "REGIÓN DEL MAULE"], ["description", "REGIÓN DEL MAULE"], ["url", "http://static.t13.cl/images/original/2015/09/1441399728-2.jpg"], ["created_at", "2017-09-29 00:32:01.084645"], ["updated_at", "2017-09-29 00:32:01.084645"]]
+  [1m[35m (105.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("titulo", "description", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "REGION DEL BIOBIO"], ["description", "REGION DEL BIOBIO"], ["url", "http://static.t13.cl/images/original/2015/09/1441399728-2.jpg"], ["created_at", "2017-09-29 00:32:01.194665"], ["updated_at", "2017-09-29 00:32:01.194665"]]
+  [1m[35m (80.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("titulo", "description", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "LA ARAUCANíA"], ["description", "LA ARAUCANíA"], ["url", "http://static.t13.cl/images/original/2015/09/1441399728-2.jpg"], ["created_at", "2017-09-29 00:32:01.279881"], ["updated_at", "2017-09-29 00:32:01.279881"]]
+  [1m[35m (86.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "histories" ("titulo", "description", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "REGIÓN DE LOS RÍOS"], ["description", "REGIÓN DE LOS RÍOS"], ["url", "http://static.t13.cl/images/original/2015/09/1441399728-2.jpg"], ["created_at", "2017-09-29 00:32:01.369722"], ["updated_at", "2017-09-29 00:32:01.369722"]]
+  [1m[35m (101.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "histories" ("titulo", "description", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "REGION DE LOS LAGOS"], ["description", "REGION DE LOS LAGOS"], ["url", "http://static.t13.cl/images/original/2015/09/1441399728-2.jpg"], ["created_at", "2017-09-29 00:32:01.476253"], ["updated_at", "2017-09-29 00:32:01.476253"]]
+  [1m[35m (75.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "histories" ("titulo", "description", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "REGIÓN DE AYSÉN"], ["description", "REGIÓN DE AYSÉN"], ["url", "http://static.t13.cl/images/original/2015/09/1441399728-2.jpg"], ["created_at", "2017-09-29 00:32:01.558382"], ["updated_at", "2017-09-29 00:32:01.558382"]]
+  [1m[35m (69.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("titulo", "description", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "REGIÓN DE MAGALLANES"], ["description", "Valparaiso description"], ["url", "http://static.t13.cl/images/original/2015/09/1441399728-2.jpg"], ["created_at", "2017-09-29 00:32:01.637057"], ["updated_at", "2017-09-29 00:32:01.637057"]]
+  [1m[35m (113.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-09-28 21:32:18 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.6ms)
+  [1m[36mHistorie Load (0.2ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=6)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=7)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=8)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=9)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=10)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=11)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=12)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=13)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=14)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=15)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=16)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=17)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=18)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=19)[0m
+  Rendered home/index.html.erb within layouts/application (25.8ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 302ms (Views: 248.6ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/histories/6/tasks" for 127.0.0.1 at 2017-09-28 21:32:54 -0300
+Processing by TasksController#index as HTML
+  Parameters: {"history_id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  [1m[36mHistorie Load (0.2ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE (id=6) ORDER BY "histories"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.4ms)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE (historie_id=6)[0m
+  Rendered tasks/index.html.erb within layouts/application (2.9ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 33ms (Views: 23.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-28 21:32:59 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.9ms)
+  [1m[36mHistorie Load (0.4ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=6)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=7)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=8)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=9)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=10)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=11)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=12)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=13)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=14)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=15)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=16)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=17)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=18)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=19)[0m
+  Rendered home/index.html.erb within layouts/application (24.7ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+Completed 200 OK in 60ms (Views: 50.5ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/histories/6/tasks?histories_id=6&state=true&user_id=1" for 127.0.0.1 at 2017-09-28 21:33:00 -0300
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"mKA8YwjrWrptNA0L2ONEyw4SVVbneUXIcakEzs8F4miRznTHez7avmGGKqnKMX5jW7DTqiUA63D5ZwdPrQgUcg==", "histories_id"=>"6", "state"=>"true", "user_id"=>"1", "history_id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHistorie Load (0.2ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE "histories"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("user_id", "historie_id", "state", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["historie_id", 6], ["state", "t"], ["created_at", "2017-09-29 00:33:00.779775"], ["updated_at", "2017-09-29 00:33:00.779775"]]
+  [1m[35m (133.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 161ms (ActiveRecord: 134.4ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-09-28 21:33:00 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.4ms)
+  [1m[36mHistorie Load (0.2ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=6)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=7)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=8)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=9)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=10)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=11)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=12)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=13)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=14)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=15)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=16)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=17)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=18)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=19)[0m
+  Rendered home/index.html.erb within layouts/application (18.8ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 44ms (Views: 36.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/histories/6/tasks" for 127.0.0.1 at 2017-09-28 21:33:02 -0300
+Processing by TasksController#index as HTML
+  Parameters: {"history_id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  [1m[36mHistorie Load (0.2ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE (id=6) ORDER BY "histories"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.8ms)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE (historie_id=6)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  Rendered tasks/index.html.erb within layouts/application (7.7ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 34ms (Views: 28.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-28 21:33:11 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.8ms)
+  [1m[36mHistorie Load (0.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=6)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=7)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=8)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=9)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=10)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=11)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=12)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=13)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=14)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=15)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=16)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=17)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=18)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=19)[0m
+  Rendered home/index.html.erb within layouts/application (22.9ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 48ms (Views: 40.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/histories/10/tasks" for 127.0.0.1 at 2017-09-28 21:33:32 -0300
+Processing by TasksController#index as HTML
+  Parameters: {"history_id"=>"10"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  [1m[36mHistorie Load (0.2ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE (id=10) ORDER BY "histories"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.6ms)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE (historie_id=10)[0m
+  Rendered tasks/index.html.erb within layouts/application (3.9ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 34ms (Views: 26.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-28 21:33:34 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.8ms)
+  [1m[36mHistorie Load (0.4ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=6)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=7)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=8)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=9)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=10)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=11)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=12)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=13)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=14)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=15)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=16)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=17)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=18)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=19)[0m
+  Rendered home/index.html.erb within layouts/application (29.4ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 60ms (Views: 50.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/histories/11/tasks" for 127.0.0.1 at 2017-09-28 21:33:38 -0300
+Processing by TasksController#index as HTML
+  Parameters: {"history_id"=>"11"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  [1m[36mHistorie Load (0.2ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE (id=11) ORDER BY "histories"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.6ms)
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE (historie_id=11)[0m
+  Rendered tasks/index.html.erb within layouts/application (4.6ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 42ms (Views: 35.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-28 21:33:41 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.8ms)
+  [1m[36mHistorie Load (0.4ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=6)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=7)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=8)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=9)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=10)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=11)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=12)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=13)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=14)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=15)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=16)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=17)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=18)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=19)[0m
+  Rendered home/index.html.erb within layouts/application (31.2ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 63ms (Views: 52.5ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/histories/7/tasks" for 127.0.0.1 at 2017-09-28 21:33:43 -0300
+Processing by TasksController#index as HTML
+  Parameters: {"history_id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  [1m[36mHistorie Load (0.5ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE (id=7) ORDER BY "histories"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.6ms)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE (historie_id=7)[0m
+  Rendered tasks/index.html.erb within layouts/application (4.0ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 36ms (Views: 27.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-28 21:33:45 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.5ms)
+  [1m[36mHistorie Load (0.3ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=6)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=7)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=8)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=9)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=10)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=11)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=12)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=13)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=14)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=15)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=16)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=17)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=18)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=19)[0m
+  Rendered home/index.html.erb within layouts/application (31.7ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 58ms (Views: 50.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/histories/7/tasks" for 127.0.0.1 at 2017-09-28 21:33:47 -0300
+Processing by TasksController#index as HTML
+  Parameters: {"history_id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  [1m[36mHistorie Load (1.8ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE (id=7) ORDER BY "histories"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.5ms)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE (historie_id=7)[0m
+  Rendered tasks/index.html.erb within layouts/application (3.0ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 37ms (Views: 27.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-28 21:33:50 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.9ms)
+  [1m[36mHistorie Load (0.6ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=6)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=7)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=8)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=9)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=10)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=11)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=12)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=13)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=14)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=15)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=16)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=17)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=18)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1) AND (historie_id=19)[0m
+  Rendered home/index.html.erb within layouts/application (32.2ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 61ms (Views: 51.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/histories/7/tasks" for 127.0.0.1 at 2017-09-28 21:33:54 -0300
+Processing by TasksController#index as HTML
+  Parameters: {"history_id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  [1m[36mHistorie Load (0.3ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE (id=7) ORDER BY "histories"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.9ms)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE (historie_id=7)[0m
+  Rendered tasks/index.html.erb within layouts/application (5.1ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 40ms (Views: 31.9ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-09-28 21:33:59 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"paWGsk9hYZZH/uQZIyvGm5k7ZWgYeO2PVvnJoIR7ouasy84WPLThkktMw7sx+fwzzJnjlNoBQzfeN8oh5nZU/A=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-28 21:33:59 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.4ms)
+  [1m[36mHistorie Load (0.3ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  Rendered home/index.html.erb within layouts/application (7.4ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 33ms (Views: 27.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/histories/7/tasks" for 127.0.0.1 at 2017-09-28 21:34:23 -0300
+Processing by TasksController#index as HTML
+  Parameters: {"history_id"=>"7"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-09-28 21:34:23 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.8ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-09-28 21:34:31 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.7ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-09-28 21:34:32 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.5ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-09-28 21:34:41 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.2ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-09-28 21:34:52 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aTxE9yU0x59CQEW0KEDveCqvla6tgayiz63Q3sylmQT05h4+2NWiGQJw5DCsI5Gf08YtGIFOpk6N6g40YFhc0w==", "user"=>{"email"=>"felipe@soser.cl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "felipe@soser.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-09-29 00:34:52.934365"], ["last_sign_in_at", "2017-09-29 00:14:11.563562"], ["sign_in_count", 42], ["updated_at", "2017-09-29 00:34:52.935192"], ["id", 1]]
+  [1m[35m (82.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/histories/7/tasks
+Completed 302 Found in 273ms (ActiveRecord: 84.4ms)
+
+
+Started GET "/histories/7/tasks" for 127.0.0.1 at 2017-09-28 21:34:53 -0300
+Processing by TasksController#index as HTML
+  Parameters: {"history_id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (user_id=1)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "histories"[0m
+  [1m[36mHistorie Load (0.1ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE (id=7) ORDER BY "histories"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered shared/_notice_alert.html.erb (0.4ms)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE (historie_id=7)[0m
+  Rendered tasks/index.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 28ms (Views: 23.5ms | ActiveRecord: 0.8ms)
+
+
